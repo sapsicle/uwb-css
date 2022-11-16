@@ -1,0 +1,6 @@
+Statistics for the numbers in fileIn.txt:
+average: 50.06876644700719
+max: 199.9169967171112
+min: -99.9980824885919
+
+There are 3176 negative numbers, 3249 numbers between 0 (inclusive) and 100 (exclusive), and 3141 numbers that are greater than or equal to 100.
