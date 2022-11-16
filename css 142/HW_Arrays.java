@@ -126,7 +126,7 @@ public class HW_Arrays {
 
             fout.println(); //separator in case multiple dives
 
-            System.out.println("Enter another dive? (y/N): ");
+            System.out.print("Enter another dive? (y/N): ");
             char again = kin.next().toLowerCase().charAt(0);
             switch (again) {
                 case 'y': looping = true;
