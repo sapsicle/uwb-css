@@ -1,14 +1,16 @@
-import java.util.*;
-import java.io.*;
+// import java.util.*;
+// import java.io.*;
 public class Fraction {
     private int numerator, denominator;
 
     public Fraction() {
-
+        this.numerator = 0;
+        this.denominator = 0;
     }
 
     public Fraction(int num, int den) {
-
+        this.numerator = num;
+        this.denominator = den;
     }
 
 
