@@ -1,0 +1,65 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "vmArgs": "-enableassertions"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayBasedDataStructuresDriver",
+            "request": "launch",
+            "mainClass": "ArrayBasedDataStructuresDriver",
+            "projectName": "css 143_dcb19d42",
+            "vmArgs": "-enableassertions"
+        },
+        {
+            "type": "java",
+            "name": "Launch DateWeightYoungHumanDriver",
+            "request": "launch",
+            "mainClass": "DateWeightYoungHumanDriver",
+            "projectName": "css 143_dcb19d42"
+        },
+        {
+            "type": "java",
+            "name": "Launch Day1",
+            "request": "launch",
+            "mainClass": "Day1",
+            "projectName": "css 143_dcb19d42"
+        },
+        {
+            "type": "java",
+            "name": "Launch FractionDriver",
+            "request": "launch",
+            "mainClass": "FractionDriver",
+            "projectName": "css 143_dcb19d42"
+        },
+        {
+            "type": "java",
+            "name": "Launch FractionsV1",
+            "request": "launch",
+            "mainClass": "FractionsV1",
+            "projectName": "css 143_dcb19d42"
+        },
+        {
+            "type": "java",
+            "name": "Launch Practice",
+            "request": "launch",
+            "mainClass": "Practice",
+            "projectName": "css 143_dcb19d42"
+        },
+        {
+            "type": "java",
+            "name": "Launch VideoGame1",
+            "request": "launch",
+            "mainClass": "VideoGame1",
+            "projectName": "css 143_dcb19d42"
+        }
+    ]
+}
