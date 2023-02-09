@@ -1,0 +1,66 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "vmArgs": "-enableassertions"
+        },
+        {
+            "type": "java",
+            "name": "Launch AssertDemo",
+            "request": "launch",
+            "mainClass": "AssertDemo",
+            "projectName": "lab 4_481afe48",
+            "vmArgs": "-enableassertions"
+        },
+        {
+            "type": "java",
+            "name": "Launch DebugMe",
+            "request": "launch",
+            "mainClass": "DebugMe",
+            "projectName": "lab 4_481afe48",
+            "args": "9"
+        },
+        {
+            "type": "java",
+            "name": "Launch DebuggingExercise4",
+            "request": "launch",
+            "mainClass": "DebuggingExercise4",
+            "projectName": "lab 4_481afe48"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestCompileTime",
+            "request": "launch",
+            "mainClass": "TestCompiletime",
+            "projectName": "lab 4_481afe48"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestExceptions",
+            "request": "launch",
+            "mainClass": "TestExceptions",
+            "projectName": "lab 4_481afe48"
+        },
+        {
+            "type": "java",
+            "name": "Launch CallStack",
+            "request": "launch",
+            "mainClass": "CallStack",
+            "projectName": "lab 4_481afe48"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestFinally",
+            "request": "launch",
+            "mainClass": "TestFinally",
+            "projectName": "lab 4_481afe48"
+        }
+    ]
+}
