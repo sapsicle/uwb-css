@@ -2,14 +2,20 @@
 using namespace std;
 
 int main() {
-    int a, b;
+    int num, largest = 0;
 
-    cin >> a >> b;
-
-    if (a > b) {
-        cout << a << endl;
-    } else {
-        cout << b << endl;
+    cout << "Enter a number to start: " << endl;
+    cin >> largest;
+    for (int i = 0; i < 5; i++) {
+        cout << "Enter another number: " << endl;
+        cin >> num;
+        
+        if (num > largest) {
+            largest = num;
+            cout << num << endl;
+        } else {
+            cout << largest << endl;
+        }
     }
 
     return 0;
