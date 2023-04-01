@@ -1,0 +1,14 @@
+2. file does in fact compile
+
+3. onePlus() increments a by 1, though a is passed by value making a copy,
+and with no return value the original a stays unchanged
+
+4. the a in main is changed as the reference to the original a is passed,
+and no copy is made like in onePlus()
+
+6. value receives a constant string reference to the string s,
+which passes its reference without a copy but does not allow it to be mutated,
+using less memory by not copying and preventing unwanted mutation
+
+7. value returns a reference to an int which means the int stays in memory and is not copied when returned
+++ increments the int by 1
