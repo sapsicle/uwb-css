@@ -1,0 +1,4 @@
+od -a shows that the ascii characters are different, but there was no change to the output of all 3 files
+
+i'm not sure why they all read and output the same without issue if the characters are different,
+but i imagine it's some kind of automatic handling by either the OS or C++
