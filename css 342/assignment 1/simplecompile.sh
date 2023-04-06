@@ -16,22 +16,22 @@
 
 date
 
-echo "*** compiling with clang++ to create an executable called myprogram"
+echo "*** compiling with clang++ to create an executable called assignment1"
 clang++ --version
-clang++ -std=c++14 -Wall -Wextra -Wno-sign-compare *.cpp -g -o myprogram
+clang++ -std=c++14 -Wall -Wextra -Wno-sign-compare *.cpp -g -o assignment1
 
 echo "*** running clang-tidy using options from .clang-tidy"
 clang-tidy --version
 clang-tidy *.cpp -- -std=c++14
 
-echo "*** running myprogram"
-./myprogram
+echo "*** running assignment1"
+./assignment1
 
 # valgrind will detect memory leaks
 # echo "*** running with valgrind"
-# valgrind ./myprogram.exe
+# valgrind ./assignment1.exe
 
-echo "*** cleaning up, deleting myprogram"
-rm myprogram
+echo "*** cleaning up, deleting assignment1"
+rm assignment1
 
 date
