@@ -40,9 +40,10 @@ public:
     bool isInLibrary(const string &BookName) const;
 
 private:
-    static const int MAX = 100;
-    static string library[MAX];
-    static int numBooks;
+    const int MAX = 100;
+    string * library;
+    int numBooks;
 };
 
+// #include "library.cpp"
 #endif // ASS1_LIBRARY_H

@@ -11,7 +11,7 @@
 
 // constructor with default name
 Library::Library(const string &Name) {
-    // static string library[MAX];
+    library[MAX];
     this->numBooks = 0;
 }
 
@@ -19,6 +19,7 @@ Library::Library(const string &Name) {
 // nothing on heap
 Library::~Library() {
     // destructor
+    delete library;
 }
 
 // true if book found in library
@@ -39,7 +40,7 @@ bool Library::addBook(const string &BookName) {
     // set book to numBooks index
     // numBooks == 0 will place it in library[0] which is the first index
     // numBooks == 5 will place it in library[5] which is the 6th index
-    library[this->numBooks] = BookName;
+    library[numBooks] = BookName;
     // then increment to account for new book
     this->numBooks++;
 

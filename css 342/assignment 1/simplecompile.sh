@@ -22,7 +22,7 @@ clang++ -std=c++14 -Wall -Wextra -Wno-sign-compare *.cpp -g -o assignment1
 
 echo "*** running clang-tidy using options from .clang-tidy"
 clang-tidy --version
-clang-tidy *.cpp -- -std=c++15
+clang-tidy *.cpp -- -std=c++14
 
 echo "*** running assignment1"
 ./assignment1
