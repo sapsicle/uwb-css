@@ -7,7 +7,7 @@ class LinkList {
 private:
     // int getCurrentSize();
     // Node<ItemType>* nodePtr;
-    void display(const Node* head);
+    void display(Node* head) const;
 
 public:
 

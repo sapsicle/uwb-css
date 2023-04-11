@@ -7,7 +7,7 @@ using namespace std;
 
 // template<class ItemType>
 class Node {
-    // friend LinkList;
+    friend LinkList;
 private:
     
     string item;

@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void LinkList::display(const Node* head) {
+void LinkList::display(Node* head) const {
     Node* current = head;
     while (current != nullptr) {
         cout << current->item << endl;
