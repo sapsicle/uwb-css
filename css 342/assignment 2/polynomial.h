@@ -1,5 +1,6 @@
-#ifndef POLYNOMIAL_H
-#define POLYNOMIAL_H
+// #ifndef POLYNOMIAL_H
+// #define POLYNOMIAL_H
+#pragma once
 
 #include <vector>
 #include <iostream>
@@ -35,4 +36,4 @@ public:
    
 };
 
-#endif
+// #endif
