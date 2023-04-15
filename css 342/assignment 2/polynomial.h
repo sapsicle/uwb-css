@@ -1,39 +1,47 @@
-// #ifndef POLYNOMIAL_H
-// #define POLYNOMIAL_H
-#pragma once
+#ifndef POLYNOMIAL_H
+#define POLYNOMIAL_H
+// #pragma once
 
 #include <vector>
 #include <iostream>
 
 class Polynomial {
-
 friend std::ostream &operator<<(std::ostream &out, const Polynomial& other);
+
 private:
-    std::vector<double> coeffs;  // coefficients of the polynomial
-    
+    std::vector<double> coeffs;
+
 public:
-    // constructor that takes a vector of coefficients
+    // default constructor
     Polynomial(const std::vector<double>& c);
 
-    // no-args constructor 
-    // Polynomial();
-
-    // addition operator
+    // standard mathematic operators
     Polynomial operator+(const Polynomial& other) const;
     
-    // subtraction operator
     Polynomial operator-(const Polynomial& other) const;
     
-    // multiplication operator
     Polynomial operator*(const Polynomial& other) const;
     
-  // check equality
-  bool operator==(const Polynomial& other) const;
+    // equality comparison operators
+    bool operator==(const Polynomial& other) const;
 
-  // check if not equal
-  bool operator!=(const Polynomial& other) const;
-    // print function
-   
+    bool operator!=(const Polynomial& other) const;
+
+    // standard mathematic incrementation/decrementation operators
+    Polynomial operator+=(const Polynomial& other);
+
+    Polynomial operator-=(const Polynomial& other);
+
+    Polynomial operator*=(const Polynomial& other);
+
+    // inequality comparison operators
+    bool operator>(const Polynomial& other) const;
+    
+    bool operator<(const Polynomial& other) const;
+
+    bool operator>=(const Polynomial& other) const;
+
+    bool operator<=(const Polynomial& other) const;
 };
 
-// #endif
+#endif

@@ -7,7 +7,7 @@
 #
 ---
 # See https://clang.llvm.org/extra/clang-tidy/#using-clang-tidy for all possible checks
-Checks: '*,-fuchsia-*,-cppcoreguidelines-pro-bounds-constant-array-index,-cppcoreguidelines-pro-bounds-array-to-pointer-decay,-google-readability-braces-around-statements,-google-build-usi$'
+Checks: 'google-*,-fuchsia-*,-cppcoreguidelines-pro-bounds-constant-array-index,-cppcoreguidelines-pro-bounds-array-to-pointer-decay,-google-readability-braces-around-statements,-google-build-usi$'
 
 WarningsAsErrors: "*"
 # HeaderFilterRegex: '.*'
