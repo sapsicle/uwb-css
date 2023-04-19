@@ -8,7 +8,7 @@ int main() {
     SafeArray myA = SafeArray(size);
     cout << "myA after initializing : "  << myA << endl;
 
-    /*  Uncomment and expand when your setter & getter work
+    // Uncomment and expand when your setter & getter work
     
     for (int i = 0; i < size; i++){
         myA.setValue(i, i*2);
@@ -21,5 +21,5 @@ int main() {
     catch (const std::exception &e) {
         cout << "Caught exception: " << e.what() << "! Continuing..." << endl;
     }
-    */
+    
 };
