@@ -38,4 +38,6 @@ SuperInt& SuperInt::theValue()
     return *this;
 }
 
-
+int SuperInt::getValue(void) {
+    return myValue;
+}

@@ -11,6 +11,7 @@
 #pragma once
 
 class SuperInt {
+    // had to overload as print statements in ScopeEtc were erroring with the changes to theValue()
     friend std::ostream &operator<<(std::ostream& out, SuperInt& superint);
  public:
     // Name helps us see which variable
@@ -20,7 +21,10 @@ class SuperInt {
 
     // For demonstrating lvalues
     // int& theValue(void);
-    SuperInt &theValue(void);
+    SuperInt& theValue(void);
+
+    // had to write a new getter to access myValue in SuperInt as the updated theValue() cuts off access to SuperInt::myValue from SuperDuperInt
+    int getValue(void);
 
  private:
     int myValue;
