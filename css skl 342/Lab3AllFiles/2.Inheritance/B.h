@@ -15,9 +15,10 @@ class B : public A
 public:
     B();
     B(string name);
-	~B();
-    
-    
+    B(string name, int data1, int data2, int data3);
+    ~B();
+
 private:
+    int testDataB;
 
 };

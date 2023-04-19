@@ -18,13 +18,16 @@ class A
 public:
     A();
     A(string name);
-	~A();
-    
+    A(string name, int data1, int data2);
+    ~A();
+
     void setN(const char* s);
     string getN() const;
     
 private:
     string n;
+    int testDataA1;
+    int testDataA2;
 };
 
 #endif

@@ -13,24 +13,29 @@
 
 using namespace std;
 
+std::ostream &operator<<(std::ostream &out, SuperInt &superint)
+{
+    out << superint.myValue;
+    return out;
+}
+
 // Name helps us see which variable
 SuperInt::SuperInt(int init, const char *name): myValue(init), myName(name)
 {
-  cout << "Created a SuperInt called " + myName << endl;
+    cout << "Created a SuperInt called " + myName << endl;
 }
 
 SuperInt::~SuperInt()
 {
-  cout << "Destroyed a SuperInt called " + myName << endl;
+    cout << "Destroyed a SuperInt called " + myName << endl;
 }
 
 // For demonstrating lvalues
-const int& SuperInt::theValue()
+SuperInt& SuperInt::theValue()
 {
-  cout << "Getting value (can't use as lvalue) of a SuperInt called " + myName << endl;
-  myValue = 3;
-  return myValue;
+    cout << "Getting value (can't use as lvalue) of a SuperInt called " + myName << endl;
+    myValue = 3;
+    return *this;
 }
-
 
 

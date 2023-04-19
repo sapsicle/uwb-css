@@ -16,11 +16,12 @@ class C : public B
 public:
     C();
     C(string name);
-	~C();
-    
-    
+    C(string name, int data1, int data2, int data3, int data4);
+    ~C();
+
 private:
-    
+    float testDataC;
+
 };
 
 #endif

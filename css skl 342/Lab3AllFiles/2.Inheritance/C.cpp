@@ -12,21 +12,25 @@
 
 using namespace std;
 
-C::C()
+C::C() : B()
 {
-  setN("unnamed C");
-  cout << "Inside C::C() for object " << getN() << endl;
+    testDataC = 2;
+    setN("unnamed C");
+    cout << "Inside C::C() for object " << getN() << endl;
 }
 
-C::C(string name) : B(name)
+C::C(string name) : B(name), testDataC(1)
 {
-  cout << "Inside C::C(string) for object " << getN() << endl;
+    cout << "Inside C::C(string) for object " << getN() << endl;
 }
 
+C::C(string name, int data1, int data2, int data3, int data4) : B(name, data1, data2, data3), testDataC(data4) {
+    cout << "inside C(data)" << endl;
+}
 
 C::~C()
-{
-  cout << "Inside C::~C() for object " << getN() << endl;
+    {
+    cout << "Inside C::~C() for object " << getN() << endl;
 }
 
 

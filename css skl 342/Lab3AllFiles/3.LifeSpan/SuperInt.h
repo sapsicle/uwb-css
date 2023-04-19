@@ -8,25 +8,27 @@
  * Modified by Yang Peng on 01/12/18
  */
 #include <string>
+#pragma once
 
 class SuperInt {
+    friend std::ostream &operator<<(std::ostream& out, SuperInt& superint);
  public:
-  // Name helps us see which variable
-  SuperInt(int init, const char *name);
+    // Name helps us see which variable
+    SuperInt(int init, const char *name);
 
-  ~SuperInt();
+    ~SuperInt();
 
-  // For demonstrating lvalues
-  //int& theValue(void);
-  const int& theValue(void);
+    // For demonstrating lvalues
+    // int& theValue(void);
+    SuperInt &theValue(void);
 
  private:
-  int myValue;
-  std::string myName;
+    int myValue;
+    std::string myName;
 
-  // Neat trick: making this private prevents creating unitialized
-  // objects
-  SuperInt();
+    // Neat trick: making this private prevents creating unitialized
+    // objects
+    SuperInt();
 
 };
 
