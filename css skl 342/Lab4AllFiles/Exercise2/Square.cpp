@@ -8,29 +8,41 @@
 #include "Square.h"
 
 using namespace std;
-void Square::setSize(int newSize)
+
+template <class T>
+void Square<T>::setSize(T newSize)
 {
 	theSize = newSize;
 }
 
-int Square::getSize(void) const
+template <class T>
+int Square<T>::getSize(void) const
 {
 	return theSize;
 }
 
-Square & Square::operator=(const Square& other)
+template <class T>
+Square<T>& Square<T>::operator=(const Square<T>& other)
 {
 	theSize = other.getSize();
 	return *this;
 }
 
-ostream& operator<<(ostream &os, const Square &c)
+template <class T>
+ostream& operator<<(ostream &os, const Square<T> &c)
 {
 	os << c.getSize();
 	return os;
 }
 
-bool Square::operator<(const Square& other)
+template <class T>
+bool Square<T>::operator<(const Square& other)
 {
 	return theSize < other.getSize();
+}
+
+template <class T>
+bool Square<T>::operator>(const Square& other)
+{
+    return theSize > other.getSize();
 }

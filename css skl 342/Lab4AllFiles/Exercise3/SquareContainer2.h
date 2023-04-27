@@ -63,4 +63,3 @@ private:
 };
 
 // Remember, we can't compile template classes separately.  How can we fix this?
-

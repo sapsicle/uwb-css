@@ -1,0 +1,3 @@
+1.1) Deep copy, it's copying the data fields
+
+3) Code won't compile at all no matter what I do. I asked around and got told to move the operator overloading into the header file. I did that, and then IteratorTest produced a ton of errors saying no operator matches the operands. I have 0 idea how to fix this code and it seems not a soul otherwise does either.

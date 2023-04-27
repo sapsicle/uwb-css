@@ -38,11 +38,12 @@ public:
     string getS(void) const;
     int getIp(void) const;
 
-private:
+protected:  // made the utilities protected to hand to MySubClass
     // a couple useful utility functions
     void copy(const MyClass& other);
     void clear(void);
 
+private:
     // an assortment of test data members
     int i;    // primitive
     double d; // primitive

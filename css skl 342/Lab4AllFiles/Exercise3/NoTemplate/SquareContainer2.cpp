@@ -43,7 +43,7 @@ SquareContainer::iterator::operator++(int)
 }
 
 // Returns the current item
-int& SquareContainer::iterator::operator*()
+int& SquareContainer::iterator::operator*() const
 {
 	// If we're past the end, it's really an error. You could throw an
 	// exception, if you like. Make sure you document the iterator's

@@ -4,14 +4,13 @@
  * Created by Michael Stiber
  * Modified by Yang Peng on 01/15/2018
  */
-#ifndef SQUARECONTAINER_H
-#define SQUARECONTAINER_H
+#include "SquareContainer2.h"
+
 #include <cstdlib>
 #include <iostream>
 
 using namespace std;
 
-#include "SquareContainer2.h"
 
 // Prefix form of "next" operator
 template <typename T>
@@ -47,7 +46,7 @@ SquareContainer<T>::iterator::operator++(int)
 
 // Returns the current item
 template <typename T>
-const T& SquareContainer<T>::iterator::operator*() const
+T& SquareContainer<T>::iterator::operator*() const
 {
 	// If we're past the end, it's really an error. You could throw an
 	// exception, if you like. Make sure you document the iterator's
@@ -71,4 +70,3 @@ bool SquareContainer<T>::iterator::operator!=(const iterator& rhs) const
 {
 	return (theContainer != rhs.theContainer) || (x != rhs.x) || (y != rhs.y);
 }
-#endif

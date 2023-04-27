@@ -53,6 +53,10 @@ void MyClass::setS(string newS)
 
 void MyClass::setIp(int newIp)
 {
+    delete ip;
+    ip = nullptr;
+
+    ip = new int;
     *ip = newIp;
 }
 
@@ -83,6 +87,10 @@ void MyClass::copy(const MyClass& other)
     s = other.s;
 
     //    assert(ip == nullptr);
+    
+    delete ip;
+    ip = nullptr;
+
     ip = new int;
     *ip = *(other.ip);
 }
