@@ -1,0 +1,13 @@
+Exercise 1
+---------
+2.  When you add 1 to the maximum value that can be held, you cause overflow.  When you hit the maximum, it rolls over to the minimum number and continues increasing from there. (Imagine a car odometer at 999,999 miles or a clock at 11:59... by adding 1 you rollover and start at the beginning again).
+
+For an unsigned int, since 0 is the minimum value, if you add 1 to max, you'll get 0. For a signed int, if you add 1 to max you get -2147483648, which is the minimum value for signed ints.  
+
+You may have gotten a compiler warning about integer overflow, which makes sense because we deliberately caused overflow!  But, there is no guarantee that the compiler will catch overflow issues.  If you are using large numbers or numbers of uncertain value (for example, the user inputs the value), you must check for overflow.
+
+3. You get 6 for digits10 on a float, 15 for digits10 on a double.  This is the number of digits that can be guaranteed to be accurate for each data type, also known as the digits of precision.  As an example, consider the number 0.123456789, which is 9 digits.  If you represent this number as a float,float only guarantees accuracy to 6 digits. So it could round your number to something like 0.123456, or 0.1234569314 or any number where the first 6 digits are the correct ones.  The reason this happens is because we represent numbers in base 10, but floats/ doubles have to represent numbers in base 2.  Take a look at the example in limits.cpp to see this in action.
+
+Exercise 4
+----------
+5.  The return value is of type pair<map<string, int>::iterator,bool>, that is, a pair of an iterator and a bool. The iterator is pointing to either the element you just inserted, or the element that already has the key you were trying to insert. The bool indicates whether the element was inserted (true/1 if it was inserted, false/0 if it was skipped).  In this case, since the key already existed, we get an iterator to the element that has the same key, and 0.
