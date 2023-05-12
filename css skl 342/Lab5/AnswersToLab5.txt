@@ -1,0 +1,5 @@
+1.2 The program won't compile because of overflow
+
+1.3 Floats are accurate to 6 places, doubles to 15. Doubles should be used when more precision is needed, and floats are probably faster being smaller.
+
+4.5 The code compiles and runs, but prints out the original key and value from pokemap and then 0. Not sure what is going on.
